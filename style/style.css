@@ -3,7 +3,7 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     background: darkcyan;
 }
 
@@ -19,12 +19,10 @@ html {
 
 .left {
     float: left;
-    height: 300px;
 }
 
 .right {
     float: right;
-    height: 400px;
 }
 
 /* Clear floats after the columns */
