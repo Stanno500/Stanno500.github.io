@@ -2,8 +2,10 @@ body {
     margin: 0;
     padding: 0;
     /* overflow: hidden; */
-    background: darkcyan;
+    background: #10111E;
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 * {
@@ -17,7 +19,8 @@ body {
 
 .left {
     float: left;
-    width: 40%;
+    width: 25%;
+    height: 300vh;
     position: fixed;
     background-image: url('../background.svg');
     background-size: cover;
@@ -26,7 +29,8 @@ body {
 
 .right {
     float: right;
-    width: 60%;
+    width: 70%;
+    margin:2%;
 }
 
 /* Clear floats after the columns */
@@ -46,4 +50,17 @@ body {
     .left {
         z-index: -1;
     }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
