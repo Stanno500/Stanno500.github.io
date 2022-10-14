@@ -4,8 +4,6 @@ body {
     /* overflow: hidden; */
     background: #10111E;
     overflow-x: hidden;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
 }
 
 * {
@@ -14,7 +12,6 @@ body {
 
 .column {
     margin: 0;
-    padding: 10px;
 }
 
 .left {
@@ -23,14 +20,21 @@ body {
     height: 300vh;
     position: fixed;
     background-image: url('../background.svg');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+}
+
+article {
+    border-left: 5px solid #E2FFBE;
+    font-family: 'Montserrat', sans-serif;
+    color: #E2FFBE;
+    padding-left: 50px;
 }
 
 .right {
     float: right;
     width: 70%;
-    margin:2%;
+    margin: 2%;
 }
 
 /* Clear floats after the columns */
