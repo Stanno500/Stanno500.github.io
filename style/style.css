@@ -48,7 +48,6 @@ article {
 @media screen and (max-width: 900px) {
     .column {
         width: 100%;
-        opacity: 0.5;
     }
 
     .left {
