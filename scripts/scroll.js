@@ -1,5 +1,5 @@
 const orb = document.querySelector('.left'),
-    ease = 0.5,
+    ease = 0.8,
     start_position = 0;
 let animation_running = false,
     total_offset = 0,
@@ -19,9 +19,9 @@ function animation_loop() {
     //console.log('test')
     const current_offset = window.pageYOffset;
 
-    let difference = current_offset - (total_offset+2);
+    let difference = current_offset - (total_offset);
     difference *= ease;
-    if(difference>0)console.log(difference);
+    if(difference>10)console.log(difference);
     if (Math.abs(difference) < 0.05) {
         scroll_request = 0;
         total_offset = current_offset;
@@ -30,7 +30,7 @@ function animation_loop() {
         return;
     }
 
-    orb.style.top = `${start_position - total_offset}px`;
+    orb.style.top = `${(start_position - total_offset)*0.6}px`;
 
     total_offset += difference;
 
