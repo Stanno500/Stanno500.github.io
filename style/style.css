@@ -1,10 +1,9 @@
-body,
-html {
+body {
     margin: 0;
     padding: 0;
-    height: 100%;
     /* overflow: hidden; */
     background: darkcyan;
+    overflow-x: hidden;
 }
 
 * {
@@ -13,25 +12,16 @@ html {
 
 .column {
     margin: 0;
-    height: 100vh;
     padding: 10px;
-    overflow-y: scroll;
-
-    /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.column::-webkit-scrollbar {
-    display: none;
 }
 
 .left {
     float: left;
     width: 40%;
+    position: fixed;
+    background-image: url('../background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .right {
@@ -47,8 +37,13 @@ html {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .column {
         width: 100%;
+        opacity: 0.5;
+    }
+
+    .left {
+        z-index: -1;
     }
 }

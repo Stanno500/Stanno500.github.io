@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style type="text/css">
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background: darkcyan;
+        }
+
+        #content {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0px;
+        }
+    </style>
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+    Test123456769
+    <!-- <div id="content">
+        <iframe width="45%" height="100%"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGY8NBymWLSlPQ5ILufnIvv%2FCompRadar%3Fpage-id%3D27%253A290%26node-id%3D1210%253A8314%26viewport%3D-1765%252C-662%252C0.17%26scaling%3Dmin-zoom%26starting-point-node-id%3D441%253A5569%26show-proto-sidebar%3D1"
+            allowfullscreen></iframe>
+    </div> -->
+    <h1>{{ title }}</h1>
+    <p>This is IFrame</p>
+    <button onclick="displayIframe()">Click me</button>
+    <div id="iframeDisplay"></div>
+
+    <script>
+
+        var c = 'darkcyan';
+        function displayIframe() {
+            iFrameText = '<iframe width="45%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGY8NBymWLSlPQ5ILufnIvv%2FCompRadar%3Fpage-id%3D27%253A290%26node-id%3D1210%253A8314%26viewport%3D-1765%252C-662%252C0.17%26scaling%3Dmin-zoom%26starting-point-node-id%3D441%253A5569%26show-proto-sidebar%3D1" allowfullscreen></iframe>'
+            document.getElementById("iframeDisplay").innerHTML = iFrameText;
+        }
+        function test() {
+
+            if (c == 'red') c = 'darkcyan';
+            else c = 'red';
+
+            document.getElementsByTagName("body")[0].style.background = c;
+        }
+    </script>
+
+    <button onclick="test()">Yesss</button>
+</body>
+
+</html>
