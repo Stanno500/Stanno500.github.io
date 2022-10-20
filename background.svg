@@ -1,5 +1,5 @@
-<svg width="1000" height="8022" viewBox="0 0 1000 8022" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_117_38)">
+<svg width="1000" height="20000" viewBox="0 0 1000 20000" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_121_57)">
 <rect width="1066" height="581" rx="50" transform="matrix(1 0 0 -1 -188 6795)" stroke="#8FFF00" stroke-width="50"/>
 <rect width="371" height="881" rx="50" transform="matrix(1 0 0 -1 -188 6560)" stroke="#00214F" stroke-width="50"/>
 <rect x="-188" y="5075" width="906" height="889" rx="50" stroke="#8FFF00" stroke-width="50"/>
@@ -11,8 +11,8 @@
 <path d="M-252 4007.59L1000 2756V3230.83L-14.5072 4245L-252 4007.59Z" fill="#8FFF00"/>
 </g>
 <defs>
-<clipPath id="clip0_117_38">
-<rect width="1000" height="8022" fill="white"/>
+<clipPath id="clip0_121_57">
+<rect width="1000" height="20000" fill="white"/>
 </clipPath>
 </defs>
 </svg>

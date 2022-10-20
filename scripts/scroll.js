@@ -30,7 +30,7 @@ function animation_loop() {
         return;
     }
 
-    orb.style.top = `${(start_position - total_offset)*0.6}px`;
+    orb.style.top = `${(start_position - total_offset)*0.5}px`;
 
     total_offset += difference;
 

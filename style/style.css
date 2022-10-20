@@ -1,9 +1,22 @@
+@font-face {
+    font-family: 'Lora', serif;
+    src: url('https://fonts.googleapis.com/css2?family=Lora:wght@700');
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+}
+
 body {
     margin: 0;
     padding: 0;
     /* overflow: hidden; */
     background: #10111E;
     overflow-x: hidden;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 * {
@@ -14,21 +27,32 @@ body {
     margin: 0;
 }
 
+header {
+    text-align: right;
+    color: white;
+    font-size: 3em;
+    font-family: 'Lora', serif;
+}
+
 .left {
     float: left;
-    width: 25%;
-    height: 300vh;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 25vw;
     position: fixed;
     background-image: url('../background.svg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 article {
     border-left: 5px solid #E2FFBE;
-    font-family: 'Montserrat', sans-serif;
     color: #E2FFBE;
     padding-left: 50px;
+    text-align: justify;
 }
 
 .right {
