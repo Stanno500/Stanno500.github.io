@@ -46,8 +46,9 @@ function checkScrollSpeed() {
     sHeight = document.body.scrollHeight;
     if (sHeight <= 4000) scrollSpeedMultiplier = 0.8;
     else if (sHeight > 4000 && sHeight <= 5000) scrollSpeedMultiplier = 0.5;
-    else if (sHeight > 5000 && sHeight <= 6000) scrollSpeedMultiplier = 0.5;
-    else scrollSpeedMultiplier = 0.1;
+    else if (sHeight > 5000 && sHeight <= 6000) scrollSpeedMultiplier = 0.36;
+    else if (sHeight > 6000 && sHeight <= 7000) scrollSpeedMultiplier = 0.18;
+    else scrollSpeedMultiplier = 0.15;
 }
 
 function showWidth() {
