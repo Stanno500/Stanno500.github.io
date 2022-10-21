@@ -47,15 +47,16 @@ header {
 article {
     border-left: 5px solid #E2FFBE;
     color: #E2FFBE;
-    padding-left: 50px;
+    padding-left: 3vw;
     text-align: justify;
+    margin: 2vmax;
 }
 
 .right {
     float: right;
     width: 70vw;
     margin: 2vw;
-    padding: 0 10% 0 5%;
+    padding: 0 10% 0 0;
 }
 
 /* Clear floats after the columns */
@@ -72,8 +73,9 @@ article {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 900px) {
-    .right{
-        width: 100vw;
+    .right {
+        width: 90vw;
+        background-image: linear-gradient(to right, rgba(0, 33, 79, 1), rgba(0, 33, 79, 0.2));
     }
 
     .left {
