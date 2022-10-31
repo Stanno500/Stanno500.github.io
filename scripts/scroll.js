@@ -1,4 +1,4 @@
-const orb = document.querySelector('.left'),
+const orb = document.querySelector('.imageGraphic'),
     ease = 0.57,
     start_position = 0;
 let animation_running = false,
@@ -10,9 +10,6 @@ var pageHeight;
 
 function animate_scroll() {
     pageHeight = document.body.scrollHeight;
-    //scrollSpeedMultiplier = (pageHeight - pageHeight * 0.5) / (pageHeight);
-    //alert(document.body.clientHeight);
-    document.querySelector('#test').innerHTML = scrollSpeedMultiplier;
     scroll_request++;
 
     if (!animation_running) {
