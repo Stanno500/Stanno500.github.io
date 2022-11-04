@@ -41,11 +41,22 @@ function animation_loop() {
 
 function checkScrollSpeed() {
     sHeight = document.body.scrollHeight;
-    if (sHeight <= 4000) scrollSpeedMultiplier = 0.8;
-    else if (sHeight > 4000 && sHeight <= 5000) scrollSpeedMultiplier = 0.5;
-    else if (sHeight > 5000 && sHeight <= 6000) scrollSpeedMultiplier = 0.36;
-    else if (sHeight > 6000 && sHeight <= 7000) scrollSpeedMultiplier = 0.18;
+    if (sHeight <= 1600) scrollSpeedMultiplier = 1.57;
+    else if (sHeight <= 2400) scrollSpeedMultiplier = 0.81;
+    else if (sHeight <= 3000) scrollSpeedMultiplier = 0.81;
+    else if (sHeight <= 4000) scrollSpeedMultiplier = 0.57;
+    else if (sHeight <= 5000) scrollSpeedMultiplier = 0.42;
+    else if (sHeight <= 6000) scrollSpeedMultiplier = 0.36;
+    else if (sHeight <= 7000) scrollSpeedMultiplier = 0.18;
     else scrollSpeedMultiplier = 0.15;
+
+
+    // else if (sHeight > 2000 && sHeight <= 3000) scrollSpeedMultiplier = 0.81;
+    // else if (sHeight > 3000 && sHeight <= 4000) scrollSpeedMultiplier = 0.57;
+    // else if (sHeight > 4000 && sHeight <= 5000) scrollSpeedMultiplier = 0.42;
+    // else if (sHeight > 5000 && sHeight <= 6000) scrollSpeedMultiplier = 0.36;
+    // else if (sHeight > 6000 && sHeight <= 7000) scrollSpeedMultiplier = 0.18;
+    // else scrollSpeedMultiplier = 0.15;
 }
 
 function showWidth() {
