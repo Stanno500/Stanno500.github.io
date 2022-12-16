@@ -1,4 +1,4 @@
-const orb = document.querySelector('.left'),
+const orb = document.querySelector('.imageGraphic'),
     ease = 0.57,
     start_position = 0;
 let animation_running = false,
@@ -10,9 +10,6 @@ var pageHeight;
 
 function animate_scroll() {
     pageHeight = document.body.scrollHeight;
-    //scrollSpeedMultiplier = (pageHeight - pageHeight * 0.5) / (pageHeight);
-    //alert(document.body.clientHeight);
-    document.querySelector('#test').innerHTML = scrollSpeedMultiplier;
     scroll_request++;
 
     if (!animation_running) {
@@ -44,10 +41,14 @@ function animation_loop() {
 
 function checkScrollSpeed() {
     sHeight = document.body.scrollHeight;
-    if (sHeight <= 4000) scrollSpeedMultiplier = 0.8;
-    else if (sHeight > 4000 && sHeight <= 5000) scrollSpeedMultiplier = 0.5;
-    else if (sHeight > 5000 && sHeight <= 6000) scrollSpeedMultiplier = 0.36;
-    else if (sHeight > 6000 && sHeight <= 7000) scrollSpeedMultiplier = 0.18;
+
+    if (sHeight <= 1600) scrollSpeedMultiplier = 1.57;
+    else if (sHeight <= 2400) scrollSpeedMultiplier = 0.81;
+    else if (sHeight <= 3000) scrollSpeedMultiplier = 0.81;
+    else if (sHeight <= 4000) scrollSpeedMultiplier = 0.57;
+    else if (sHeight <= 5000) scrollSpeedMultiplier = 0.42;
+    else if (sHeight <= 6000) scrollSpeedMultiplier = 0.36;
+    else if (sHeight <= 7000) scrollSpeedMultiplier = 0.18;
     else scrollSpeedMultiplier = 0.15;
 }
 

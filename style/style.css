@@ -19,18 +19,36 @@ body {
 
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 * {
     box-sizing: border-box;
 }
 
 header {
-    text-align: right;
     color: white;
     font-size: 3em;
     font-family: 'Lora', serif;
 }
 
-.left {
+footer {
+    background-color: #8FFF00;
+    text-align: center;
+    padding: 50px;
+    color: #00214F;
+    border-radius: 2vmax;
+}
+
+footer a {
+    color: black;
+    font-weight: bold;
+}
+
+
+.imageGraphic {
     float: left;
     left: 0;
     top: 0;
@@ -47,16 +65,23 @@ header {
 article {
     border-left: 5px solid #E2FFBE;
     color: #E2FFBE;
-    padding-left: 3vw;
+    padding: 1.5vmax 1.5vmax 1.5vmax 3vmax;
     text-align: justify;
+    margin: 30px;
+    border-radius: 2vmax;
 }
 
-.right {
+iframe {
+    display: inline-block;
+    min-height: 500px;
+    height: 50%;
+}
+
+#rightColumn {
     float: right;
     width: 70vw;
     margin: 2vw;
     padding: 0 10% 0 0;
-    border-radius: 2vmax;
 }
 
 /* Clear floats after the columns */
@@ -67,20 +92,34 @@ article {
 }
 
 .alignRight {
+
+    padding-left: auto;
+    padding-right: 0;
+}
+
+.alignLeft {
     padding-left: auto;
     padding-right: 0;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 900px) {
-    .right {
+    #rightColumn {
         width: 90vw;
+    }
+
+    .imageGraphic {
+        z-index: -1;
+        width: 50vw;
+    }
+
+    article {
         background-image: linear-gradient(to right, rgba(16, 17, 30, 1) 5%, rgba(16, 17, 30, 0.2));
     }
 
-    .left {
-        z-index: -1;
-        width: 50vw;
+    header {
+        background-image: linear-gradient(to bottom, rgba(16, 17, 30, 1) 5%, rgba(16, 17, 30, 0.2));
+
     }
 }
 
